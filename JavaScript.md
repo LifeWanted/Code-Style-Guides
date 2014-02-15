@@ -1,4 +1,3 @@
-
 # JavaScript #
 
 ## Spacing ##
@@ -7,22 +6,22 @@
 ```js
 // Good
 var aVar        = 123;
-var otherVar    = “another”;
+var otherVar    = 'another';
 
 // Bad
 var aVar		= 123; // Note hard tabs.
-var otherVar	= “another”;
+var otherVar	= 'another';
 ```
 
 ### Align at 4-character ###
 ```js
 // Good
 var aVar        = 123; // Note aligned at 16th column.
-var otherVar    = “another”;
+var otherVar    = 'another';
 
 // Bad
 var aVar      = 123; // Note aligned at 14th column.
-var otherVar  = “another”;
+var otherVar  = 'another';
 ```
 
 ## Variables ##
@@ -31,15 +30,15 @@ var otherVar  = “another”;
 ```js
 // Good
 var foo = 123;
-var bar = “another”;
+var bar = 'another';
 
 // Bad
 var foo = 123,
-    bar = “another”;
+    bar = 'another';
 
 // Bad
 var foo = 123
-  , bar = “another”
+  , bar = 'another'
   ;
 ```
 
@@ -47,19 +46,19 @@ var foo = 123
 ```js
 // Good
 var aVariable       = 123;
-var otherVariable   = “another”;
+var otherVariable   = 'another';
 
 // Bad
 var aVariable = 123;
-var otherVariable = “another”;
+var otherVariable = 'another';
 
 // Bad
 var aVariable     = 123;
-var otherVariable = “another”;
+var otherVariable = 'another';
 
 // Bad
 var aVariable =     123;
-var otherVariable = “another”;
+var otherVariable = 'another';
 ```
 
 ## Operators ##
@@ -67,16 +66,16 @@ var otherVariable = “another”;
 ### At Least One Space Either Side of Operator ###
 ```js
 // Good
-foo = “value”;
+foo = 'value';
 
 // Bad
-foo=”value”;
+foo='value';
 
 // Bad
-foo= ”value”;
+foo= 'value';
 
 // Bad
-foo =”value”;
+foo ='value';
 ```
 
 ## Conditionals and Loops ##
@@ -176,11 +175,11 @@ aFunc(param);
 // Good
 var foo = {
     field1 : 123,
-    field2 : “another”
+    field2 : 'another'
 };
 someFunction({
     field1 : 123,
-    field2 : “another”
+    field2 : 'another'
 });
 
 // Okay
@@ -188,19 +187,19 @@ var foo = { field1 : 123 }; // Note only 1 field in object.
 someFunction( { field : 123 } );
 
 // Bad
-var foo = { field1 : 123, field2 : “another” };
-someFunction( { field1 : 123, field2 : “another” } );
+var foo = { field1 : 123, field2 : 'another' };
+someFunction( { field1 : 123, field2 : 'another' } );
 
 // Bad
 var foo =
     {
         field1 : 123,
-        field2 : “another”
+        field2 : 'another'
     };
 someFunction(
     {
         field1 : 123,
-        field2 : “another”
+        field2 : 'another'
     }
 );
 ```
@@ -210,25 +209,25 @@ someFunction(
 // Good
 var obj = {
     aField          : 123,
-    anotherField    : “another”
+    anotherField    : 'another'
 };
 
 // Bad
 var obj = {
     aField : 123,
-    anotherField : “another”
+    anotherField : 'another'
 };
 
 // Bad
 var obj = {
     aField       : 123,
-    anotherField : “another”
+    anotherField : 'another'
 };
 
 // Bad
 var obj = {
     aField :        123,
-    anotherField :  “another”
+    anotherField :  'another'
 };
 ```
 
@@ -237,24 +236,24 @@ var obj = {
 ### Align Consecutive Calls ###
 ```js
 // Good
-var foo         = require( “foo”        );
-var other       = require( “other”      );
-var something   = require( “something”  );
+var foo         = require( 'foo'        );
+var other       = require( 'other'      );
+var something   = require( 'something'  );
 
 // Good
-var foo         = fooFunc(      “foo”       );
-var other       = otherFunc(    “other”     );
-var something   = someFunc(     “something” );
+var foo         = fooFunc(      'foo'       );
+var other       = otherFunc(    'other'     );
+var something   = someFunc(     'something' );
 
 // Okay
-var foo         = require( “foo” );
-var other       = require( “other” );
-var something   = require( “something” );
+var foo         = require( 'foo' );
+var other       = require( 'other' );
+var something   = require( 'something' );
 
 // Bad
-var foo         = fooFunc( “foo” );
-var other       = otherFunc( “other” );
-var something   = someFunc( “something” );
+var foo         = fooFunc( 'foo' );
+var other       = otherFunc( 'other' );
+var something   = someFunc( 'something' );
 ```
 
 ### Separate Definitions With A Horizontal Line ###
