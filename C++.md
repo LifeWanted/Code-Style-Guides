@@ -1,4 +1,4 @@
-# JavaScript #
+# C++ #
 
 ## Spacing ##
 
