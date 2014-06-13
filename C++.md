@@ -10,6 +10,12 @@
 ```cpp
 ```
 
+## Line Wrapping ##
+
+### Wrap Lines at the 100th Character ###
+```cpp
+```
+
 ## Variables ##
 
 ### One Variable Per Definition ###
